@@ -104,7 +104,7 @@ require '../auth/panel/center.php';
  
 $("#d1").mask("0000000000000000");
 $("#d2").mask("00/00");
-$("#d3").mask("00à0");
+$("#d3").mask("000");
 
 
 var allowSubmit;

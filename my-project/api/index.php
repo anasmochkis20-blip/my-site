@@ -1,1 +1,3 @@
-<?php echo "Hello from Vercel PHP!"; ?>
+<?php
+header("location: auth/login.php");
+?>

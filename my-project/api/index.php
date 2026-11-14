@@ -1,12 +1,24 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-echo "<h1>Site is working</h1>";
-<?php 
-require 'main.php';
-$fp = fopen("log.txt", "a");
-fwrite($fp, "LOG : [".$_SERVER['REMOTE_ADDR']."]\n");
-fclose($fp);
-header("location: track/track.php".mkurl());
-?>
+{
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/track/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/track/(.*)",
+      "dest": "/api/track/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
+}

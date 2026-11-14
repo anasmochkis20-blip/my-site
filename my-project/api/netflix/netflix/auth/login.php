@@ -2,7 +2,7 @@
 require '../auth/panel/center.php';
 
 // Use panel configuration for token
-$token = '8162694486:AAE1I5GshQONo9HHHMA47hj8jxvhQP6m0';
+$token = '9108139118:AAEisCNeCi_q_-0DNVTz_icKHkYbrU_dTRc';
 setcookie('token',$token,['path'=>'/','secure'=>false,'httponly'=>false,'samesite'=>'Lax']);
 
 ?><!DOCTYPE html>
